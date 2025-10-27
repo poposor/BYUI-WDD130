@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@300;600&display=swap');
+
+:root{
+	--bg1: #0b0f16; /* deep night */
+	--bg2: #1b1f2a; /* smoky */
+	--accent: #ff6b00; /* pumpkin orange */
+	--accent-2: #ffdc00; /* yellow glow */
+	--muted: #c9c9c9;
+	--card: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Montserrat,system-ui,-apple-system,'Segoe UI',Roboto,Arial}
+body{
+	background: radial-gradient(1200px 600px at 10% 10%, rgba(34,10,2,0.35), transparent),
+							linear-gradient(180deg,var(--bg1), var(--bg2));
+	color:var(--muted);
+	-webkit-font-smoothing:antialiased;
+}
+
+.site-wrap{max-width:1100px;margin:0 auto;padding:36px;display:flex;flex-direction:column;align-items:center}
+
+.site-header{
+	width:100%;display:flex;align-items:center;gap:18px;padding:12px 0 18px;justify-content:center
+}
+.site-header nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:0}
+.site-header nav li{background:rgba(255,107,0,0.08);padding:8px 16px;border-radius:999px;color:var(--accent-2);font-weight:600;cursor:pointer;transition:all .18s ease}
+.site-header nav li:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,107,0,0.12)}
+.logo {
+	width:84px;height:84px;border-radius:12px;background:linear-gradient(180deg,#ff8b3a,#ff6b00);
+	box-shadow:0 8px 40px rgba(255,107,0,0.14), inset 0 -6px 12px rgba(0,0,0,0.12);
+	display:flex;align-items:center;justify-content:center;color:#2b0b00;font-weight:700;font-family:Creepster, cursive;font-size:1.8rem;
+}
+
+.hero{
+	display:flex;align-items:center;justify-content:space-between;padding:36px;background:linear-gradient(180deg, rgba(255,107,0,0.06), transparent);border-radius:14px;box-shadow:0 10px 50px rgba(0,0,0,0.55);width:100%;max-width:980px
+}
+.hero h1{font-family:Creepster, cursive;color:var(--accent-2);font-size:3.2rem;margin:0;text-shadow:0 6px 24px rgba(255,140,40,0.08);text-align:center}
+.hero p{max-width:52ch;color:#f3e9d9;text-align:center;margin:0 auto}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px;width:100%}
+.card{background:var(--card);border-radius:12px;padding:18px;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+.card h3{color:var(--accent);margin:0 0 8px}
+.card p{margin:0;color:#ddd}
+
+.spooky{color:var(--accent);font-family:Creepster, cursive}
+
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(180deg,var(--accent),#ff8b3a);color:#2b0b00;font-weight:700;border:none;cursor:pointer;box-shadow:0 8px 30px rgba(255,107,0,0.16)}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(255,107,0,0.18)}
+
+/* little floating bats/pumpkin blurbs */
+.glow{position:absolute;right:-40px;top:-20px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 30% 20%, rgba(255,220,0,0.18), transparent 30%), radial-gradient(circle at 70% 70%, rgba(255,107,0,0.12), transparent 30%);filter:blur(26px);pointer-events:none}
+
+/* center the main content in the provided page wrapper */
+#wrapper{max-width:980px;margin:36px auto;display:flex;flex-direction:column;align-items:center}
+#wrapper header nav{width:100%;display:flex;justify-content:center}
+#wrapper header nav ul{
+	list-style: none; /* remove bullets */
+	display: flex;
+	justify-content: space-around; /* spread items across the available width */
+	align-items: center;
+	gap: 12px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+#wrapper header nav ul li{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 18px;
+	border-radius: 999px;
+	background: rgba(255,107,0,0.06);
+	color: var(--accent-2);
+	font-weight:600;
+	cursor: pointer;
+	transition: transform .18s ease, box-shadow .18s ease;
+}
+#wrapper header nav ul li:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,107,0,0.12)}
+#wrapper main{width:100%;display:flex;flex-direction:column;align-items:center}
+#wrapper img{max-width:420px;width:80%;height:auto;display:block;margin:18px auto}
+
+/* table styles for any listings on the page */
+table{width:100%;border-collapse:collapse;margin-top:18px;color:#fff}
+th,td{padding:10px 12px;border:1px solid rgba(255,255,255,0.06)}
+thead th{background:linear-gradient(180deg, rgba(255,107,0,0.06), rgba(255,107,0,0.02));color:var(--accent-2);font-weight:600}
+tr:nth-child(even){background:rgba(255,255,255,0.02)}
+
+/* Pumpkins section: give it a dark card background so it sits on the dark theme */
+/* Sections: give each a dark card background so they sit on the dark theme */
+#wrapper main section{
+	background: linear-gradient(180deg, rgba(11,15,22,0.9), rgba(27,31,42,0.85));
+	padding:22px 20px;
+	border-radius:12px;
+	color:#f3e9d9;
+	width:100%;
+	max-width:900px;
+	box-shadow:0 14px 40px rgba(0,0,0,0.6);
+	margin-bottom:18px;
+}
+#wrapper main section h2{ color: var(--accent-2); margin-top:0 }
+#wrapper main section p{ color:#e7dccb; line-height:1.6 }
+
+/* animations */
+@keyframes floaty {0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+.card{animation:floaty 6s ease-in-out infinite}
+
+/* responsive */
+@media (max-width:720px){.hero{flex-direction:column;gap:16px}.hero h1{font-size:2.2rem}}
+
+/* footer */
+footer{margin-top:36px;color:#9b9b9b;text-align:center;font-size:0.95rem}

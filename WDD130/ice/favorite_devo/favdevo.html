@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+         <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>President & Sister Meredith</td>
+            <td>Preserving the Spirit of Ricks at BYU-Idaho</td>
+            <td>BYUI</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Elder Clark G. & Sister Christine C. Gilbert</td>
+            <td>Finding the Savior in the Proclamation</td>
+            <td>BYUI</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Stephanie L. Colvin</td>
+            <td>First Things First</td>
+            <td>BYUI</td>
+            <td>2025</td>
+          </tr>
+         </table>
+         
+           <form action="#" method="post">
+             <table class="form-table" style="margin:auto; width:90%; max-width:900px;">
+               <thead>
+                 <tr>
+                   <th>Speaker</th>
+                   <th>Title</th>
+                   <th>Location</th>
+                   <th>Year</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><input id="speaker" name="speaker" type="text" placeholder="e.g. President Nelson" required /></td>
+                   <td><input id="title" name="title" type="text" placeholder="Talk title" required /></td>
+                   <td><input id="location" name="location" type="text" placeholder="e.g. BYU Devotional" /></td>
+                   <td><input id="year" name="year" type="number" min="1900" max="2100" placeholder="2025" /></td>
+                 </tr>
+               </tbody>
+             </table>
+             <button type="submit">Add Devotional</button>
+           </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

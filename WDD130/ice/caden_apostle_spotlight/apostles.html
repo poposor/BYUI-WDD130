@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            background-color: #E8ECED;
+        }
+        #card {
+            color: #FFF;
+            text-align: center;
+            background-image: url("./images/christus.webp");
+            background-size: cover;
+            width: 900px;
+            height: 700px;
+            border: #000 solid 5px;
+            border-radius: 40px;
+        }
+        #firstimgs {
+            margin: auto;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .apostle {
+            width: 80px;
+            height: 80px; 
+            object-fit: cover;
+            object-position: top;
+            border: #fff solid 5px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        .apostle:hover {
+            transform: scale(1.2);
+            border: rgb(255, 255, 94) solid 5px;
+        }
+        #pres {
+            width: 120px;
+            height: 120px;
+        }
+        #first {
+            width: 100px;
+            height: 100px;
+        }
+        #second {
+            width: 100px;
+            height: 100px;
+        }
+        #twelve {
+            margin: auto;
+            width: 400px;
+            display: grid;
+            align-items: center;
+            justify-content: space-around;  
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="card">
+        <h1 id="firstpres">First Presidency</h1>
+        <div id="firstimgs">
+            <img class="apostle" id="first" src="./images/eyring.webp">
+            <img class="apostle" id="pres" src="./images/oaks.webp">
+            <img class="apostle" id="second" src="./images/christofferson.webp">
+        </div>
+        <h2 id="quorum">Quorum of the Twelve Apostles</h2>
+        <div id="twelve">
+            <!-- <div id="row1"> -->
+                    <img class="apostle" src="./images/holland.webp">
+                    <img class="apostle" src="./images/uchtdorf.webp">
+                    <img class="apostle" src="./images/bednar.webp">
+                    <img class="apostle" src="./images/cook.webp">
+            <!-- </div>
+            <div id="row2"> -->
+                    <img class="apostle" src="./images/anderson.webp">
+                    <img class="apostle" src="./images/rasband.webp">
+                    <img class="apostle" src="./images/stevenson.webp">
+                    <img class="apostle" src="./images/renlund.webp">
+            <!-- </div>
+            <div id="row3"> -->
+                    <img class="apostle" src="./images/gong.webp">
+                    <img class="apostle" src="./images/soares.webp">
+                    <img class="apostle" src="./images/kearon.webp">
+                    <img class="apostle" src="./images/alvey.png">
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+</html>
