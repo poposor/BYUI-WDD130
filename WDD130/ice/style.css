@@ -1,0 +1,35 @@
+.ice {
+    border: #1a1a1a 2px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
+    width: 80%;
+    margin: 20px auto;
+}
+#apostle {
+    background-image: url(./caden_apostle_spotlight/images/alvey.png);
+    background-size: cover;
+}
+#prophet {
+    background-image: url(./caden_prophet_cards/images/russell_nelson.png);
+    background-size: cover;
+}
+#favoriteDevo {
+    background-image: url(./favorite_devo/images/icenter.png);
+    background-size: cover;
+}
+#grid {
+    background-image: url(./grid_flags/images/chile.png);
+    background-size: cover;
+}
+#halloween {
+    background-image: url(./halloween/images/halloween.png);
+    background-size: cover;
+}
+#positioning {
+    background-image: url(./positioning/images/example2.png);
+    background-size: cover;
+}
+main {
+    width: 100%;
+}
