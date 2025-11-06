@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
         <header>
-            <img src="https://picsum.photos/150?random=6" alt="logo">
+            <img id="logo" src="./images/slightcrop.jpg" alt="logo">
             <h1>Caden's Portal</h1>
         </header>
         <nav>
@@ -20,18 +23,27 @@
             <a href=""><p>About Me</p></a>
         </nav>
         <main>
-            <section id="wwr" onclick="window.location.href='./wwr/';" style="cursor: pointer;">
+            <a href="./wwr/">
+            <!-- <section id="wwr" onclick="window.location.href='./wwr/';" style="cursor: pointer;"> -->
+                <section id="wwr">
                 <div>WWR</div>
             </section>
+            </a>
+            <a>
             <section id="ice" onclick="window.location.href='./ice/';" style="cursor: pointer;">
                 <div>ICE</div>
             </section>
+            </a>
+            <a>
             <section id="project">
                 <div>Project</div>
             </section>
+            </a>
+            <a>
             <section id="about">
                 <div>About Me</div>
             </section>
+            </a>
             <div id="form">
                 Forms
                 <form>
