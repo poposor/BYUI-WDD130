@@ -6,6 +6,10 @@
     width: 80%;
     margin: 20px auto;
 }
+p {
+    margin: auto;
+    font-size: 20px;
+}
 #apostle {
     background-image: url(./caden_apostle_spotlight/images/alvey.png);
     background-size: cover;

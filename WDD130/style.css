@@ -87,10 +87,14 @@ section div {
     background-size: cover;
 }
 #ice {
-    background-image: url(./images/ice.png);
+    background-color: white;
+    background-image: url('./images/glacier.png');
+    background-color: cover;
+}
+#about {
+    background-image: url(./images/xcPhoto.jpg);
     background-size: cover;
 }
-
 #form {
     display: grid;
     grid-template-columns: 1fr 1fr;
